@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground: 20 14% 4%;
+  --background: 0 0% 100%;
+}
+
+html, body, :root {
+  height: 100%;
+}
+
+body {
+  @apply bg-white text-neutral-900 antialiased;
+}
+
+.container-responsive {
+  @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.btn-primary {
+  @apply inline-flex items-center gap-2 rounded-full bg-brand-600 text-white px-5 py-2.5 font-semibold shadow hover:bg-brand-700 transition;
+}
+
+.btn-secondary {
+  @apply inline-flex items-center gap-2 rounded-full bg-mustard text-black px-5 py-2.5 font-semibold shadow hover:brightness-90 transition;
+}
+
+.card {
+  @apply rounded-2xl border border-neutral-200 bg-white shadow-sm;
+}
